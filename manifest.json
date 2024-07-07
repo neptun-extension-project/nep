@@ -1,0 +1,69 @@
+{
+  "name": "neptun extension projekt",
+  "description": "egy bővülő neptun bővítmény",
+  "version": "0.1",
+  "homepage_url": "https://github.com/",
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "NEP",
+    "default_popup": "popup/index.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["modules.js", "modules/*"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "manifest_version": 3,
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://neptun.bme.hu/*",
+    "https://neptun.ejf.hu/*",
+    "https://neptun.elte.hu/*",
+    "https://*.neptun.u-szeged.hu/*",
+    "https://*.uni-bge.hu/*",
+    "https://neptun.uni-obuda.hu/*",
+    "https://*.metropolitan.hu/*",
+    "https://*.tr.pte.hu/*",
+    "https://neptunhallgato.uni-mate.hu/*",
+    "https://neptun3r.web.uni-corvinus.hu/*",
+    "https://neptun.tf.hu/*",
+    "https://*.nnet.sze.hu/*",
+    "https://neptunweb.uni-nke.hu/*",
+    "https://*.uni-miskolc.hu/*",
+    "https://neptunweb.semmelweis.hu/*",
+    "https://neptun.kre.hu/*",
+    "https://nappw.dfad.duf.hu/*",
+    "https://*.uni-pannon.hu/*",
+    "https://*.kefo.hu/*",
+    "https://*.ppke.hu/*",
+    "https://neptun.lfze.hu/*",
+    "https://neptun.edutus.hu/*",
+    "https://neptun3r.nyme.hu/*",
+    "https://neptun.uni-milton.hu/*",
+    "https://host.sdakft.hu/*",
+    "https://neptun.uni-eszterhazy.hu/*",
+    "https://neptun.kodolanyi.hu/*",
+    "https://mke-neptun.mke.hu/*",
+    "https://neptun.ejf.hu/*",
+    "https://neptun.univet.hu/*"
+  ]
+}

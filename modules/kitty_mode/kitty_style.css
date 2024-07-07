@@ -1,0 +1,35 @@
+@keyframes kitty-walk-left {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 110%;
+  }
+}
+
+@keyframes kitty-walk-right {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 110%;
+  }
+}
+
+.kitty {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
+}
+
+.kitty {
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.kitty.left {
+  transform: scaleX(-1); /* Tükrözze a képet */
+}

@@ -1,0 +1,2 @@
+globalThis.browser ??= chrome;
+// TODO
