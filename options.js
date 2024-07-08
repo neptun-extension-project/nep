@@ -3,50 +3,47 @@ globalThis.browser ??= chrome;
 async function saveOptions(e) {
   e.preventDefault();
   const inputs = document.querySelectorAll("ul#module-list > li > input");
-  let moduleOptions = {};
-  inputs.forEach(async (input) => {
-    console.log(input.id, input.checked);
-    if (input.checked) {
-      moduleOptions[input.id] = true;
-    }
-  });
+  const moduleOptions = Object.fromEntries(
+    Array.from(inputs)
+      .filter((input) => input.checked)
+      .map((input) => [input.id, true])
+  );
   console.log("set:", moduleOptions);
-  await browser.storage.sync.set({ moduleOptions: moduleOptions });
+  await browser.storage.sync.set({ moduleOptions });
 }
 
 async function restoreOptions() {
-  const modules = await import(browser.runtime.getURL("./modules.js"));
-
   try {
+    const modules = await import(browser.runtime.getURL("./modules.js"));
     const moduleList = await modules.getModules();
     console.log("modules:", moduleList);
 
-    const moduleOptions =
-      (await browser.storage.sync.get("moduleOptions")).moduleOptions || {};
+    const { moduleOptions = {} } = await browser.storage.sync.get(
+      "moduleOptions"
+    );
     console.log("got:", moduleOptions);
 
+    const ul = document.getElementById("module-list");
     moduleList.forEach((module) => {
       if (module) {
         const li = document.createElement("li");
-
         const label = document.createElement("label");
-        label.setAttribute("for", module.id);
-        label.innerText = module.name;
-        li.append(label);
-
         const input = document.createElement("input");
-        input.setAttribute("type", "checkbox");
-        input.id = module.id;
-        if (moduleOptions[module.id]) input.setAttribute("checked", true);
-        li.append(input);
 
-        const ul = document.getElementById("module-list");
+        label.setAttribute("for", module.id);
+        label.textContent = module.name;
+
+        input.type = "checkbox";
+        input.id = module.id;
+        input.checked = !!moduleOptions[module.id];
+
+        li.append(label, input);
         ul.append(li);
         console.log("Loaded settings for:", module.name);
       }
     });
   } catch (error) {
-    console.error("error loading content scripts:", error);
+    console.error("Error loading settings:", error);
   }
 }
 
