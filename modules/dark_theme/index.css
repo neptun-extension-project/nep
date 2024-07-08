@@ -1,0 +1,13 @@
+tbody {
+  background: #333;
+}
+.tr_Footer *, .login_content_separator {
+  background-image: unset !important;
+  background: #333;
+}
+#lnkForgottenPassword {
+    background: #333;
+}
+* {
+  color: #eee !important;
+}

@@ -31,5 +31,5 @@
 }
 
 .kitty.left {
-  transform: scaleX(-1); /* Tükrözze a képet */
+  transform: scaleX(-1);
 }

@@ -1,4 +1,14 @@
 const name = "kitty mode";
+const id = "kitty_mode";
+const options = [
+  {
+    name: "Minden cica",
+    description: "Mindig mutasson minden cicát.",
+    id: "all_cats",
+    type: "checkbox",
+    default: false,
+  },
+];
 
 function loadContentScript(browser, document) {
   const head = document.head || document.getElementsByTagName("head")[0];
@@ -56,4 +66,4 @@ function loadContentScript(browser, document) {
   }, 1000);
 }
 
-export { loadContentScript, name };
+export { loadContentScript, name, id, options };

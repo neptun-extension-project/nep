@@ -4,7 +4,7 @@ globalThis.browser ??= chrome;
   const modules = await import(browser.runtime.getURL("./modules.js"));
 
   try {
-    const moduleList = await modules.getModules();
+    const moduleList = await modules.getEnabledModules();
 
     moduleList.forEach((module) => {
       if (module && typeof module.loadContentScript === "function") {

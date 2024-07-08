@@ -1,4 +1,7 @@
-const modulePaths = ["modules/kitty_mode/kitty_mode.js"];
+const modulePaths = [
+  "modules/kitty_mode/kitty_mode.js",
+  "modules/dark_theme/index.js",
+];
 
 async function getModules() {
   try {
@@ -22,4 +25,12 @@ async function getModules() {
   }
 }
 
-export { getModules };
+async function getEnabledModules() {
+  const modules = await getModules();
+  const moduleOptions =
+    (await browser.storage.sync.get("moduleOptions")).moduleOptions || {};
+  console.log("got:", moduleOptions);
+  return modules.filter((module) => moduleOptions[module.id]);
+}
+
+export { getModules, getEnabledModules };

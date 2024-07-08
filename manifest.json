@@ -1,8 +1,8 @@
 {
-  "name": "neptun extension projekt",
+  "name": "neptun extension project",
   "description": "egy bővülő neptun bővítmény",
   "version": "0.1",
-  "homepage_url": "https://github.com/",
+  "homepage_url": "https://neptun-extension-project.github.io/",
   "background": {
     "scripts": ["background.js"],
     "service_worker": "background.js"
@@ -12,7 +12,8 @@
     "default_popup": "popup/index.html"
   },
   "options_ui": {
-    "page": "options.html"
+    "page": "options.html",
+    "browser_style": true
   },
   "content_scripts": [
     {
@@ -65,5 +66,10 @@
     "https://mke-neptun.mke.hu/*",
     "https://neptun.ejf.hu/*",
     "https://neptun.univet.hu/*"
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nep@neptun-extension-project.github.io"
+    }
+  }
 }
