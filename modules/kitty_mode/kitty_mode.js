@@ -1,5 +1,6 @@
 const name = "kitty mode";
 const id = "kitty_mode";
+const description = "Cicák mászkálnak a fejlécen."
 const options = [
   {
     name: "Minden cica",
@@ -66,4 +67,4 @@ function loadContentScript(browser, document) {
   }, 1000);
 }
 
-export { loadContentScript, name, id, options };
+export { loadContentScript, name, id, description, options };

@@ -1,5 +1,6 @@
 const name = "dark theme";
 const id = "dark_theme";
+const description = "Sötétebbé teszi a Neptun felületét.";
 const options = [];
 
 function loadContentScript(browser, document) {
@@ -9,11 +10,6 @@ function loadContentScript(browser, document) {
   style.rel = "stylesheet";
   style.href = browser.runtime.getURL("modules/dark_theme/index.css");
   head.append(style);
-
-  var meta = document.createElement("meta");
-  meta.name = "color-scheme";
-  meta.content = "dark light";
-  head.append(meta);
 }
 
-export { name, id, options, loadContentScript };
+export { name, id, description, options, loadContentScript };
