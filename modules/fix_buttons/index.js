@@ -7,7 +7,7 @@ function loadContentScript(browser, document) {
   function fixButtons() {
     const buttons = document.getElementsByClassName("ui-button-text-only");
     Array.from(buttons).forEach((button) => {
-      button.value = button.getAttribute("commandname");
+      if (!button.value) button.value = button.getAttribute("commandname");
     });
   }
 
