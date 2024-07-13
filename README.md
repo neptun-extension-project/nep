@@ -89,7 +89,7 @@ Törekszem az NPU-s funkciók átportolására, de van pár ami szerintem az id�
 | Bejelentkezési adatok tárolása                     | wontfix | security   |
 | Felturbózott szabad helyre várakozás               | wontfix |            |
 | Egyszerűbb félévválasztás                          | todo    |            |
-| Könnyebben használható menü                        | todo    |            |
+| Könnyebben használható menü                        | részben |            |
 | Felturbózott tárgyfelvétel oldal                   | todo    |            |
 | Felturbózott vizsgajelentkezés oldal               | todo    |            |
 | Könnyebben használható órarend, leckekönyv oldalak | ????    |            |
