@@ -6,11 +6,29 @@ const modulePaths = [
 
 async function getModules() {
   try {
+    const { moduleOptions = {} } = await browser.storage.sync.get(
+      "moduleOptions"
+    );
+    console.log("got:", moduleOptions);
+
     const modulePromises = modulePaths.map(async (path) => {
       try {
         const moduleUrl = browser.runtime.getURL(path);
         const module = await import(moduleUrl);
+
+        const options = moduleOptions[module.id] ?? {};
+
+        module.options.forEach((option) => {
+          if (options[option.id]) {
+            option.value = options[option.id];
+            console.log(
+              "Loaded option: " + option.name + ", with value: " + option.value
+            );
+          }
+        });
+
         console.log(`Loaded module: ${module.name} from ${path}`);
+
         return module;
       } catch (error) {
         console.error(`Failed to load module from ${path}:`, error);

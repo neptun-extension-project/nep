@@ -80,7 +80,7 @@ async function restoreOptions() {
           liinput.type = "checkbox";
           liinput.id = option.id;
           liinput.checked =
-            !!moduleOptions[module.id]?.[option.id] || module.default || false;
+            !!moduleOptions[module.id]?.[option.id] || module.value || false;
           liinput.disabled = !moduleOptions[module.id];
           liinput.addEventListener("change", saveRestore);
 

@@ -1,13 +1,13 @@
 const name = "kitty mode";
 const id = "kitty_mode";
-const description = "Cicák mászkálnak a fejlécen."
+const description = "Cicák mászkálnak a fejlécen.";
 const options = [
   {
     name: "Minden cica",
     description: "Mindig mutasson minden cicát.",
     id: "all_cats",
     type: "checkbox",
-    default: false,
+    value: false,
   },
 ];
 
@@ -19,7 +19,7 @@ function loadContentScript(browser, document) {
   style.href = browser.runtime.getURL("modules/kitty_mode/kitty_style.css");
   head.append(style);
 
-  const catGifs = [
+  const allCats = [
     "FERRIS.gif",
     "FIREFOX.gif",
     "GHOSTPUFFS.gif",
@@ -34,12 +34,24 @@ function loadContentScript(browser, document) {
     "xX_vampiregoth91_Xx.gif",
   ];
 
+  const defaultCats = [
+    "STRIPES.gif",
+    "KINAKO.gif",
+    "MANEKI.gif",
+    "MIDNIGHT.gif",
+    "FIREFOX.gif",
+  ];
+
   const addKitty = () => {
+    const cats = options.find((item) => item.id == "all_cats").value
+      ? allCats
+      : defaultCats;
+
     const panHeader = document.getElementById("panHeader");
     if (!panHeader) return;
 
     const img = document.createElement("img");
-    const randomCat = catGifs[Math.floor(Math.random() * catGifs.length)];
+    const randomCat = cats[Math.floor(Math.random() * cats.length)];
     img.src = browser.runtime.getURL("modules/kitty_mode/cats/" + randomCat);
     img.className = "kitty";
 
