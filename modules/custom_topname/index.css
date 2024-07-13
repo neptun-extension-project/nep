@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #222;
+  --text: #eee;
+}
+
+#upTraining_topname {
+  background-color: var(--text) !important;
+  color: var(--text) !important;
+  padding: 3px;
+}
+
+#upTraining_topname:hover {
+  background-color: var(--text) !important;
+  color: var(--bg-color) !important;
+}

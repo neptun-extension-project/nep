@@ -3,6 +3,7 @@ const modulePaths = [
   "modules/dark_theme/index.js",
   "modules/fix_buttons/index.js",
   "modules/menu_linkify/index.js",
+  "modules/custom_topname/index.js",
 ];
 
 async function getModules() {
