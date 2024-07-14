@@ -36,11 +36,19 @@ Valamiért néhány gomb felirat nélkül jelenik meg. Ezeknél egy id-t jelení
 
 Cicák mászkálnak a fejlécen (Google Colab-ből lopva).
 
-### Mobilos UI
+### Megjelenített név/neptunkód személyreszabása
 
-*TODO*
+A jobb felső nevet és neptun kódot tartalmazó címke személyre szabására van.
+
+Bekapcsolható egy cenzúra mód, amivel csak akkor látszik az adat, ha épp felette van a kurzor.
+
+A név átírható egyedi értékre.
 
 ### Reklámok kiszedése
+
+A login oldalon van egy diákhitel reklám. Ez kiszedi azt.
+
+### Mobilos UI
 
 *TODO*
 
@@ -51,10 +59,6 @@ Cicák mászkálnak a fejlécen (Google Colab-ből lopva).
 *lehet mergelve lesz a sötét témával*
 
 ### Akadálymentesítési fejlesztések
-
-*TODO*
-
-### Megjelenített név/neptunkód személyreszabása
 
 *TODO*
 
