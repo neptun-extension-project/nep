@@ -29,6 +29,7 @@ function loadContentScript(browser, document) {
   }
 
   const topname = document.getElementById("upTraining_topname");
+  if (!topname) return;
   const topnameString = topname.innerText.trim();
   let name = topnameString.split(" - ")[0];
   let neptun = topnameString.split(" - ")[1];
