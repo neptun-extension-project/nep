@@ -28,6 +28,10 @@ body,
 .menu-item {
 }
 
+.ui-widget-overlay {
+  background: none;
+}
+
 .FunctionFooter, .GadgetFooter, .sp_footerbody {
   border: none;
 }
