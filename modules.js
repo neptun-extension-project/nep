@@ -4,6 +4,7 @@ const modulePaths = [
   "modules/fix_buttons/index.js",
   "modules/menu_linkify/index.js",
   "modules/custom_topname/index.js",
+  "modules/ad_block/index.js",
 ];
 
 async function getModules() {
