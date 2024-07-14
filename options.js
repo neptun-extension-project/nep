@@ -18,8 +18,15 @@ async function saveOptions(e) {
       );
       moduleOptions[input.id] = {};
       liinputs.forEach(async (liinput) => {
-        if (liinput.checked) {
-          moduleOptions[input.id][liinput.id] = true;
+        switch (liinput.type) {
+          case "checkbox":
+            if (liinput.checked) {
+              moduleOptions[input.id][liinput.id] = true;
+            }
+            break;
+          case "text":
+            moduleOptions[input.id][liinput.id] = liinput.value;
+            break;
         }
       });
     }
@@ -77,10 +84,14 @@ async function restoreOptions() {
           lilabel.textContent = option.name;
           lilabel.title = option.description || "";
 
-          liinput.type = "checkbox";
+          liinput.type = option.type;
           liinput.id = option.id;
-          liinput.checked =
-            !!moduleOptions[module.id]?.[option.id] || module.value || false;
+          if (option.type == "checkbox")
+            liinput.checked =
+              !!moduleOptions[module.id]?.[option.id] || module.value || false;
+          else
+            liinput.value =
+              moduleOptions[module.id]?.[option.id] || module.value || "";
           liinput.disabled = !moduleOptions[module.id];
           liinput.addEventListener("change", saveRestore);
 
