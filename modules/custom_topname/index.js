@@ -9,6 +9,13 @@ const options = [
     type: "checkbox",
     value: false,
   },
+  {
+    name: "Név személyre szabása",
+    description: "A megadott nevet jeleníti meg jobb felül.",
+    id: "custom_name",
+    type: "text",
+    value: "",
+  },
 ];
 
 function loadContentScript(browser, document) {
@@ -25,6 +32,9 @@ function loadContentScript(browser, document) {
   const topnameString = topname.innerText.trim();
   let name = topnameString.split(" - ")[0];
   let neptun = topnameString.split(" - ")[1];
+
+  const setName = options.find((item) => item.id == "custom_name").value;
+  if (setName) name = setName;
 
   topname.innerText = name + " - " + neptun;
 }

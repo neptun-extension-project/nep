@@ -28,6 +28,10 @@ body,
 .menu-item {
 }
 
+.FunctionFooter, .GadgetFooter, .sp_footerbody {
+  border: none;
+}
+
 ul.menu li.menu-hover {
   background-color: var(--accent) !important;
 }
