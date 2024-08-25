@@ -12,6 +12,10 @@ Futtatáshoz egyelőre használd a `web-ext` programot.
 web-ext run -v -u https://neptun.bme.hu/hallgatoi/login.aspx
 ```
 
+## Megjegyzés régi Neptunnal kapcsolatban
+
+Ez a webextension eredetileg a régi neptun webes felületéhez készült. Viszont közben megjelent egy jóval kényelmesebb (ui, ux szempontból jobb) felület hozzá. Ennek fényében pedig úgy döntöttem átváltok az új neptun modolására.
+
 ## Kompatibilitás
 
 A bővítmény kompatibilis Firefox, Chrome és ezeken alapuló böngészőkkel.
@@ -89,7 +93,7 @@ Törekszem az NPU-s funkciók átportolására, de van pár ami szerintem az id�
 | funkció                                            | állapot | megjegyzés |
 | -------------------------------------------------- | ------- | ---------- |
 | Tárgy felvétele 1 kattintással                     | todo    |            |
-| Kidobás elleni védelem                             | todo    |            |
+| Kidobás elleni védelem                             | done    |            |
 | Bejelentkezési adatok tárolása                     | wontfix | security   |
 | Felturbózott szabad helyre várakozás               | wontfix |            |
 | Egyszerűbb félévválasztás                          | todo    |            |
@@ -121,6 +125,8 @@ Kérlek mielőtt egy új funkciót implementálsz nyiss rá issue-t, hogy mások
 ## Köszönet
 
 [NPU](https://github.com/solymosi/npu) by [Solymosi Máté](https://github.com/solymosi)
+
+[selfcare.tech](https://github.com/jenniferlynparsons/selfcaretech)
 
 ## Licence
 

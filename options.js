@@ -71,6 +71,12 @@ async function restoreOptions() {
         input.id = module.id;
         input.checked = !!moduleOptions[module.id];
 
+        if (moduleOptions[module.id] && module.enable) {
+          module.enable();
+        } else if (!moduleOptions[module.id] && module.disable) {
+          module.disable();
+        }
+
         li.append(label, input);
         input.addEventListener("change", saveRestore);
 

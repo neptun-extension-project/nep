@@ -1,0 +1,14 @@
+[{
+  "id": 1,
+  "priority": 1,
+  "action": {
+    "type": "redirect",
+    "redirect": {
+      "extensionPath": "/modules/bypass_2fa/has_token.json"
+    }
+  },
+  "condition": {
+    "urlFilter": "https://*/hallgatoing/api/Account/HasUserTokenRegistration?userLoginName=*",
+    "resourceTypes": ["main_frame", "xmlhttprequest"]
+  }
+}]

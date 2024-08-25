@@ -9,7 +9,7 @@
   },
   "action": {
     "default_title": "NEP",
-    "default_popup": "popup/index.html"
+    "default_popup": "options.html"
   },
   "options_ui": {
     "page": "options.html",
@@ -27,6 +27,7 @@
         "https://neptun.uni-obuda.hu/*",
         "https://*.metropolitan.hu/*",
         "https://*.tr.pte.hu/*",
+        "https://neptun-web2.tr.pte.hu/hallgatoing/*",
         "https://neptunhallgato.uni-mate.hu/*",
         "https://neptun3r.web.uni-corvinus.hu/*",
         "https://neptun.tf.hu/*",
@@ -133,5 +134,12 @@
     "gecko": {
       "id": "nep@neptun-extension-project.github.io"
     }
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_bypass_2fa",
+      "enabled": true,
+      "path": "modules/bypass_2fa/rules.json"
+    }]
   }
 }

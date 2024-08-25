@@ -1,10 +1,5 @@
 const modulePaths = [
-  "modules/kitty_mode/kitty_mode.js",
-  "modules/dark_theme/index.js",
-  "modules/fix_buttons/index.js",
-  "modules/menu_linkify/index.js",
-  "modules/custom_topname/index.js",
-  "modules/ad_block/index.js",
+  "modules/bypass_2fa/index.js",
 ];
 
 async function getModules() {
