@@ -1,6 +1,6 @@
 # nep
 
-Ez egy alakuló félben lévő böngésző bővítmény, ami a Neptun használatát hivatott kibírhatóbbá tenni.
+Ez egy alakuló félben lévő böngésző bővítmény, ami az új (Angular-os) Neptun használatát hivatott kellemesebbé tenni.
 
 **Figyelmeztetés: aktív fejlesztés alatt, éles használatra nem ajánlott.**
 
@@ -9,7 +9,7 @@ Ez egy alakuló félben lévő böngésző bővítmény, ami a Neptun használat
 Futtatáshoz egyelőre használd a `web-ext` programot.
 
 ```bash
-web-ext run -v -u https://neptun.bme.hu/hallgatoi/login.aspx
+web-ext run -v -u https://neptun-web3.tr.pte.hu/hallgatoing/login
 ```
 
 ## Megjegyzés régi Neptunnal kapcsolatban
@@ -24,37 +24,27 @@ A bővítmény kompatibilis Firefox, Chrome és ezeken alapuló böngészőkkel.
 
 Minden funkció külön-külön kapcsolgatható a bővítmény beállításaiban.
 
+### 2FA átugrása
+
+Néhány egyetem esetében kötelező a két faktoros azonosítás használata. Viszont az új Neptun esetében ez egy kis trükközéssel kikerülhető.
+
+### Megjelenített név/neptunkód személyreszabása
+
+A jobb felső nevet és neptun kódot tartalmazó címke személyre szabására van.
+
+A név mellett a neptun kód átírható egyedi értékre.
+
 ### Sötét téma
 
 *fejlesztés alatt*
 
 Ennek elég leíró neve van. Az implementációhoz át kellett kicsit alakítani pár elem megjelenését.
 
-### Gombok javítása
-
-Valamiért néhány gomb felirat nélkül jelenik meg. Ezeknél egy id-t jelenítünk meg. Nem ugyanaz, mint ami a felirat lenne, de jobb mint a semmi, mert ebből legalább következtethetünk arra mit is csinálna.
-
 ### Kitty-mode
 
 *fejlesztés alatt*
 
 Cicák mászkálnak a fejlécen (Google Colab-ből lopva).
-
-### Megjelenített név/neptunkód személyreszabása
-
-A jobb felső nevet és neptun kódot tartalmazó címke személyre szabására van.
-
-Bekapcsolható egy cenzúra mód, amivel csak akkor látszik az adat, ha épp felette van a kurzor.
-
-A név átírható egyedi értékre.
-
-### Reklámok kiszedése
-
-A login oldalon van egy diákhitel reklám. Ez kiszedi azt.
-
-### Mobilos UI
-
-*TODO*
 
 ### Egyedi téma
 
@@ -93,11 +83,11 @@ Törekszem az NPU-s funkciók átportolására, de van pár ami szerintem az id�
 | funkció                                            | állapot | megjegyzés |
 | -------------------------------------------------- | ------- | ---------- |
 | Tárgy felvétele 1 kattintással                     | todo    |            |
-| Kidobás elleni védelem                             | done    |            |
+| Kidobás elleni védelem                             | todo    |            |
 | Bejelentkezési adatok tárolása                     | wontfix | security   |
 | Felturbózott szabad helyre várakozás               | wontfix |            |
 | Egyszerűbb félévválasztás                          | todo    |            |
-| Könnyebben használható menü                        | részben |            |
+| Könnyebben használható menü                        | todo    |            |
 | Felturbózott tárgyfelvétel oldal                   | todo    |            |
 | Felturbózott vizsgajelentkezés oldal               | todo    |            |
 | Könnyebben használható órarend, leckekönyv oldalak | ????    |            |
