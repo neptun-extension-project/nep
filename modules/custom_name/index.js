@@ -1,30 +1,30 @@
 const name = "név személyreszabása";
-const id = "custom_topname";
+const id = "custom_name";
 const description = "Személyre szabhatod a felső név megjelenését.";
 const options = [
   {
-    name: "Név személyre szabása",
+    name: "név",
     description: "A megadott nevet jeleníti a Neptunban tárolt helyett.",
     id: "custom_name",
     type: "text",
     value: "",
   },
   {
-    name: "Megszólítás személyre szabása",
+    name: "megszólítás",
     description: "A megszólítással üdvözöl a kezdőlapon.",
     id: "custom_hello",
     type: "text",
     value: "",
   },
   {
-    name: "Neptun kód személyre szabása",
+    name: "neptun kód",
     description: "A megadott Neptun kódot jeleníti meg jobb felül.",
     id: "custom_neptun",
     type: "text",
     value: "",
   },
   {
-    name: "Monogram személyre szabása",
+    name: "monogram",
     description: "A megadott monogramot jeleníti meg a profilon.",
     id: "custom_monogram",
     type: "text",
