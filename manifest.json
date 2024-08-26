@@ -3,10 +3,6 @@
   "description": "egy bővülő neptun bővítmény",
   "version": "0.1.1",
   "homepage_url": "https://neptun-extension-project.github.io/",
-  "background": {
-    "scripts": ["background.js"],
-    "service_worker": "background.js"
-  },
   "action": {
     "default_title": "NEP",
     "default_popup": "options.html"
@@ -95,8 +91,7 @@
     "declarativeNetRequest",
     "storage",
     "scripting",
-    "activeTab",
-    "tabs"
+    "activeTab"
   ],
   "host_permissions": [
     "https://neptun.bme.hu/*",

@@ -1,6 +1,6 @@
 const name = "2fa átugrása";
 const id = "bypass_2fa";
-const description = "todo";
+const description = "Bejelentkezéskor átugorja a kétfaktoros azonosítási kód beírását.";
 const options = [];
 
 function loadContentScript(browser, document) {}
