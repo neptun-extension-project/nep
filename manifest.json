@@ -3,89 +3,6 @@
   "description": "egy bővülő neptun bővítmény",
   "version": "0.1.1",
   "homepage_url": "https://neptun-extension-project.github.io/",
-  "action": {
-    "default_title": "NEP",
-    "default_popup": "options.html"
-  },
-  "options_ui": {
-    "page": "options.html",
-    "browser_style": true
-  },
-  "content_scripts": [
-    {
-      "js": ["contentscript.js"],
-      "matches": [
-        "https://neptun.bme.hu/*",
-        "https://neptun.ejf.hu/*",
-        "https://neptun.elte.hu/*",
-        "https://*.neptun.u-szeged.hu/*",
-        "https://*.uni-bge.hu/*",
-        "https://neptun.uni-obuda.hu/*",
-        "https://*.metropolitan.hu/*",
-        "https://*.tr.pte.hu/*",
-        "https://neptun-web2.tr.pte.hu/hallgatoing/*",
-        "https://neptunhallgato.uni-mate.hu/*",
-        "https://neptun3r.web.uni-corvinus.hu/*",
-        "https://neptun.tf.hu/*",
-        "https://*.nnet.sze.hu/*",
-        "https://neptunweb.uni-nke.hu/*",
-        "https://*.uni-miskolc.hu/*",
-        "https://neptunweb.semmelweis.hu/*",
-        "https://neptun.kre.hu/*",
-        "https://nappw.dfad.duf.hu/*",
-        "https://*.uni-pannon.hu/*",
-        "https://*.kefo.hu/*",
-        "https://*.ppke.hu/*",
-        "https://neptun.lfze.hu/*",
-        "https://neptun.edutus.hu/*",
-        "https://neptun3r.nyme.hu/*",
-        "https://neptun.uni-milton.hu/*",
-        "https://host.sdakft.hu/*",
-        "https://neptun.uni-eszterhazy.hu/*",
-        "https://neptun.kodolanyi.hu/*",
-        "https://mke-neptun.mke.hu/*",
-        "https://neptun.ejf.hu/*",
-        "https://neptun.univet.hu/*"
-      ]
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["modules.js", "modules/*"],
-      "matches": [
-        "https://neptun.bme.hu/*",
-        "https://neptun.ejf.hu/*",
-        "https://neptun.elte.hu/*",
-        "https://*.neptun.u-szeged.hu/*",
-        "https://*.uni-bge.hu/*",
-        "https://neptun.uni-obuda.hu/*",
-        "https://*.metropolitan.hu/*",
-        "https://*.tr.pte.hu/*",
-        "https://neptunhallgato.uni-mate.hu/*",
-        "https://neptun3r.web.uni-corvinus.hu/*",
-        "https://neptun.tf.hu/*",
-        "https://*.nnet.sze.hu/*",
-        "https://neptunweb.uni-nke.hu/*",
-        "https://*.uni-miskolc.hu/*",
-        "https://neptunweb.semmelweis.hu/*",
-        "https://neptun.kre.hu/*",
-        "https://nappw.dfad.duf.hu/*",
-        "https://*.uni-pannon.hu/*",
-        "https://*.kefo.hu/*",
-        "https://*.ppke.hu/*",
-        "https://neptun.lfze.hu/*",
-        "https://neptun.edutus.hu/*",
-        "https://neptun3r.nyme.hu/*",
-        "https://neptun.uni-milton.hu/*",
-        "https://host.sdakft.hu/*",
-        "https://neptun.uni-eszterhazy.hu/*",
-        "https://neptun.kodolanyi.hu/*",
-        "https://mke-neptun.mke.hu/*",
-        "https://neptun.ejf.hu/*",
-        "https://neptun.univet.hu/*"
-      ]
-    }
-  ],
   "manifest_version": 3,
   "permissions": [
     "declarativeNetRequest",
@@ -93,6 +10,96 @@
     "scripting",
     "activeTab"
   ],
+  "action": {
+    "default_title": "NEP",
+    "default_popup": "options.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nep@neptun-extension-project.github.io"
+    }
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_bypass_2fa",
+      "enabled": true,
+      "path": "modules/bypass_2fa/rules.json"
+    }]
+  },
+  "content_scripts": [{
+    "js": ["contentscript.js"],
+    "matches": [
+      "https://neptun.bme.hu/*",
+      "https://neptun.ejf.hu/*",
+      "https://neptun.elte.hu/*",
+      "https://*.neptun.u-szeged.hu/*",
+      "https://*.uni-bge.hu/*",
+      "https://neptun.uni-obuda.hu/*",
+      "https://*.metropolitan.hu/*",
+      "https://*.tr.pte.hu/*",
+      "https://neptun-web2.tr.pte.hu/hallgatoing/*",
+      "https://neptunhallgato.uni-mate.hu/*",
+      "https://neptun3r.web.uni-corvinus.hu/*",
+      "https://neptun.tf.hu/*",
+      "https://*.nnet.sze.hu/*",
+      "https://neptunweb.uni-nke.hu/*",
+      "https://*.uni-miskolc.hu/*",
+      "https://neptunweb.semmelweis.hu/*",
+      "https://neptun.kre.hu/*",
+      "https://nappw.dfad.duf.hu/*",
+      "https://*.uni-pannon.hu/*",
+      "https://*.kefo.hu/*",
+      "https://*.ppke.hu/*",
+      "https://neptun.lfze.hu/*",
+      "https://neptun.edutus.hu/*",
+      "https://neptun3r.nyme.hu/*",
+      "https://neptun.uni-milton.hu/*",
+      "https://host.sdakft.hu/*",
+      "https://neptun.uni-eszterhazy.hu/*",
+      "https://neptun.kodolanyi.hu/*",
+      "https://mke-neptun.mke.hu/*",
+      "https://neptun.ejf.hu/*",
+      "https://neptun.univet.hu/*"
+    ]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["modules.js", "modules/*"],
+    "matches": [
+      "https://neptun.bme.hu/*",
+      "https://neptun.ejf.hu/*",
+      "https://neptun.elte.hu/*",
+      "https://*.neptun.u-szeged.hu/*",
+      "https://*.uni-bge.hu/*",
+      "https://neptun.uni-obuda.hu/*",
+      "https://*.metropolitan.hu/*",
+      "https://*.tr.pte.hu/*",
+      "https://neptunhallgato.uni-mate.hu/*",
+      "https://neptun3r.web.uni-corvinus.hu/*",
+      "https://neptun.tf.hu/*",
+      "https://*.nnet.sze.hu/*",
+      "https://neptunweb.uni-nke.hu/*",
+      "https://*.uni-miskolc.hu/*",
+      "https://neptunweb.semmelweis.hu/*",
+      "https://neptun.kre.hu/*",
+      "https://nappw.dfad.duf.hu/*",
+      "https://*.uni-pannon.hu/*",
+      "https://*.kefo.hu/*",
+      "https://*.ppke.hu/*",
+      "https://neptun.lfze.hu/*",
+      "https://neptun.edutus.hu/*",
+      "https://neptun3r.nyme.hu/*",
+      "https://neptun.uni-milton.hu/*",
+      "https://host.sdakft.hu/*",
+      "https://neptun.uni-eszterhazy.hu/*",
+      "https://neptun.kodolanyi.hu/*",
+      "https://mke-neptun.mke.hu/*",
+      "https://neptun.ejf.hu/*",
+      "https://neptun.univet.hu/*"
+    ]
+  }],
   "host_permissions": [
     "https://neptun.bme.hu/*",
     "https://neptun.ejf.hu/*",
@@ -124,17 +131,5 @@
     "https://mke-neptun.mke.hu/*",
     "https://neptun.ejf.hu/*",
     "https://neptun.univet.hu/*"
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "nep@neptun-extension-project.github.io"
-    }
-  },
-  "declarative_net_request": {
-    "rule_resources": [{
-      "id": "ruleset_bypass_2fa",
-      "enabled": true,
-      "path": "modules/bypass_2fa/rules.json"
-    }]
-  }
+  ]
 }
