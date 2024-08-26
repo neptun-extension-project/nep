@@ -1,7 +1,7 @@
 {
   "name": "neptun extension project",
   "description": "egy bővülő neptun bővítmény",
-  "version": "0.1",
+  "version": "0.1.1",
   "homepage_url": "https://neptun-extension-project.github.io/",
   "background": {
     "scripts": ["background.js"],
