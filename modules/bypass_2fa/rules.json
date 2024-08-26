@@ -8,7 +8,7 @@
     }
   },
   "condition": {
-    "urlFilter": "https://*/hallgatoing/api/Account/HasUserTokenRegistration?userLoginName=*",
+    "urlFilter": "https://*/api/Account/HasUserTokenRegistration?userLoginName=*",
     "resourceTypes": ["main_frame", "xmlhttprequest"]
   }
 }]
