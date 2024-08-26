@@ -1,0 +1,12 @@
+body {
+    margin: 20px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 0 10px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+input {
+    margin-left: 4px;
+}
