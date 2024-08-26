@@ -12,7 +12,19 @@
   ],
   "action": {
     "default_title": "NEP",
-    "default_popup": "options.html"
+    "default_popup": "options.html",
+    "default_icon": {
+      "16": "icon.svg",
+      "24": "icon.svg",
+      "48": "icon.svg",
+      "96": "icon.svg"
+    }
+  },
+  "icons": {
+    "16": "icon.svg",
+    "24": "icon.svg",
+    "48": "icon.svg",
+    "96": "icon.svg"
   },
   "options_ui": {
     "page": "options.html"
