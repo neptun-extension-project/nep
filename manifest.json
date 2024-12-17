@@ -34,13 +34,6 @@
       "id": "nep@neptun-extension-project.github.io"
     }
   },
-  "declarative_net_request": {
-    "rule_resources": [{
-      "id": "ruleset_bypass_2fa",
-      "enabled": true,
-      "path": "modules/bypass_2fa/rules.json"
-    }]
-  },
   "content_scripts": [{
     "js": ["contentscript.js"],
     "matches": [
