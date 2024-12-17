@@ -2,12 +2,12 @@
 
 Célunk minden új neptun támogatása. Ha találsz olyan angularos neptunt, ami hiányzik a listából kérlek nyiss egy issue-t!
 
-.. [[[cog
+<!-- [[[cog
     import json
     with open('server_data.json') as f:
         for institution in json.load(f):
             cog.out('- '+institution+'\n')
-.. ]]]
+]]] -->
 - Brenner János Hittudományi Főiskola
 - Debreceni Református Hittudományi Egyetem
 - Gál Ferenc Egyetem
@@ -39,4 +39,4 @@ Célunk minden új neptun támogatása. Ha találsz olyan angularos neptunt, ami
 - Nemzeti Közszolgálati Egyetem
 - Budapesti Metropolitan Egyetem
 - Debreceni Egyetem
-.. [[[end]]]
+<!-- [[[end]]] -->
