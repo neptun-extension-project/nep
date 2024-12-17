@@ -1,0 +1,216 @@
+{
+    "Brenner J\u00e1nos Hittudom\u00e1nyi F\u0151iskola": [
+        {
+            "url": "https://host.sdakft.hu/bjhfhw/",
+            "server_name": "BJHF_NGHW"
+        }
+    ],
+    "Debreceni Reform\u00e1tus Hittudom\u00e1nyi Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/drhehw/",
+            "server_name": "DRHE_NGHW"
+        }
+    ],
+    "G\u00e1l Ferenc Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/gfenghw/",
+            "server_name": "GFE_NGHW"
+        }
+    ],
+    "Moholy-Nagy M\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/momenghw/",
+            "server_name": "MOME_NGHW"
+        }
+    ],
+    "Magyar T\u00e1ncm\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/mtfhw/",
+            "server_name": "MTF_NGHW"
+        }
+    ],
+    "Sz\u00ednh\u00e1z- \u00e9s Filmm\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/szfenghw/",
+            "server_name": "SZFE_NGHW"
+        }
+    ],
+    "A Tan Kapuja Buddhista F\u0151iskola": [
+        {
+            "url": "https://host.sdakft.hu/tkbfhw/",
+            "server_name": "TKBF_NGHW"
+        }
+    ],
+    "Duna\u00fajv\u00e1rosi Egyetem": [
+        {
+            "url": "https://nappw.dfad.duf.hu/hallgato_ng/",
+            "server_name": "DUFNWH3"
+        }
+    ],
+    "Sz\u00e9chenyi Istv\u00e1n Egyetem": [
+        {
+            "url": "https://neptun-hweb.sze.hu/hallgato_ng/",
+            "server_name": "SZE_W2_HW_NG"
+        }
+    ],
+    "P\u00e9csi Tudom\u00e1nyegyetem": [
+        {
+            "url": "https://neptun-web1.tr.pte.hu/hallgatoing/",
+            "server_name": "PTE_HW_NG1"
+        },
+        {
+            "url": "https://neptun-web2.tr.pte.hu/hallgatoing/",
+            "server_name": "PTE_HW_NG2"
+        },
+        {
+            "url": "https://neptun-web3.tr.pte.hu/hallgatoing/",
+            "server_name": "PTE_HW_NG3"
+        },
+        {
+            "url": "https://neptun-web4.tr.pte.hu/hallgatoing/",
+            "server_name": "PTE_HW_NG4"
+        }
+    ],
+    "Pannon Egyetem": [
+        {
+            "url": "https://neptun-ws01.uni-pannon.hu/hallgato/",
+            "server_name": "PE_HW_WS01"
+        },
+        {
+            "url": "https://neptun-ws02.uni-pannon.hu/hallgato/",
+            "server_name": "PE_HW_WS02"
+        },
+        {
+            "url": "https://neptun-ws03.uni-pannon.hu/hallgato/",
+            "server_name": "PE_HW_WS03"
+        }
+    ],
+    "Edutus Egyetem": [
+        {
+            "url": "https://neptun.edutus.hu/hallgato_ng/",
+            "server_name": "STUD_HW"
+        }
+    ],
+    "E\u00f6tv\u00f6s J\u00f3zsef F\u0151iskola": [
+        {
+            "url": "https://neptun.ejf.hu/hallgato_ng/",
+            "server_name": "EJF_NG_HW"
+        }
+    ],
+    "G\u00e1bor D\u00e9nes Egyetem": [
+        {
+            "url": "https://neptun.gde.hu/hallgato/",
+            "server_name": "GDE_HW_NG"
+        }
+    ],
+    "Kodol\u00e1nyi J\u00e1nos Egyetem": [
+        {
+            "url": "https://neptun.kodolanyi.hu/hallgato_NG/",
+            "server_name": "KJF_NG"
+        }
+    ],
+    "Liszt Ferenc Zenem\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://neptun.lfze.hu/hallgato_angular/",
+            "server_name": "LFZE_HW"
+        }
+    ],
+    "Orsz\u00e1gos Rabbik\u00e9pz\u0151 - Zsid\u00f3 Egyetem": [
+        {
+            "url": "https://neptun.or-zse.hu/hallgato/",
+            "server_name": "OR-ZSE NGHW"
+        }
+    ],
+    "Szegedi Tudom\u00e1nyegyetem": [
+        {
+            "url": "https://neptun.szte.hu/hallgato/",
+            "server_name": "NTWEB06_HW"
+        }
+    ],
+    "Magyar Testnevel\u00e9si \u00e9s Sporttudom\u00e1nyi Egyetem": [
+        {
+            "url": "https://neptun.tf.hu/hallgato/",
+            "server_name": "MTSE_HW_A"
+        }
+    ],
+    "\u00d3budai Egyetem": [
+        {
+            "url": "https://neptun.uni-obuda.hu/ujhallgato/",
+            "server_name": "ANGULAR_PROD_WEB_13"
+        }
+    ],
+    "Tokaj-Hegyalja Egyetem": [
+        {
+            "url": "https://neptun.unithe.hu/hallgatoing/",
+            "server_name": "THE_NGHW"
+        }
+    ],
+    "\u00c1llatorvostudom\u00e1nyi Egyetem": [
+        {
+            "url": "https://neptun.univet.hu/ate_hw/",
+            "server_name": "ATE_NGHW1"
+        }
+    ],
+    "Veszpr\u00e9mi \u00c9rseki F\u0151iskola": [
+        {
+            "url": "https://neptun.vhf.hu/hallgato_ng/",
+            "server_name": "V\u00c9F_HW_NG"
+        }
+    ],
+    "Wekerle S\u00e1ndor \u00dczleti F\u0151iskola": [
+        {
+            "url": "https://neptun.wsuf.hu/hallgatoing/",
+            "server_name": "WSUF_NGHW"
+        }
+    ],
+    "P\u00e1zm\u00e1ny P\u00e9ter Katolikus Egyetem": [
+        {
+            "url": "https://neptun2.ppke.hu/hallgato_uj/",
+            "server_name": "PPKEHWEBUJ1"
+        },
+        {
+            "url": "https://neptun3.ppke.hu/hallgato_uj/",
+            "server_name": "PPKEHWEBUJ5"
+        }
+    ],
+    "Budapesti Corvinus Egyetem": [
+        {
+            "url": "https://neptun3r.web.uni-corvinus.hu/Hallgatoi/",
+            "server_name": "BCE_HA2"
+        }
+    ],
+    "Eszterh\u00e1zy K\u00e1roly Katolikus Egyetem": [
+        {
+            "url": "https://neptunh.uni-eszterhazy.hu/hallgatoangular/",
+            "server_name": "EKKE_HALLGAT\u00d3_\u00daJ"
+        }
+    ],
+    "Ny\u00edregyh\u00e1zi Egyetem": [
+        {
+            "url": "https://neptunweb.nye.hu/hallgatoing/",
+            "server_name": "NYE_HW_NG_56"
+        }
+    ],
+    "Nemzeti K\u00f6zszolg\u00e1lati Egyetem": [
+        {
+            "url": "https://neptunweb.uni-nke.hu/hallgato_ng/",
+            "server_name": "NKE_WEB2_HWNG"
+        }
+    ],
+    "Budapesti Metropolitan Egyetem": [
+        {
+            "url": "https://neptunweb1.metropolitan.hu/hallgato_ng/",
+            "server_name": "METU_WS1_HLG_NG"
+        },
+        {
+            "url": "https://neptunweb2.metropolitan.hu/hallgato_ng/",
+            "server_name": "METU_WS2_HLG_NG"
+        }
+    ],
+    "Debreceni Egyetem": [
+        {
+            "url": "https://www-h-ng.neptun.unideb.hu/hallgato_ng/",
+            "server_name": "DE_HWEB_25"
+        }
+    ]
+}
