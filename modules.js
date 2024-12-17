@@ -1,6 +1,7 @@
 const modulePaths = [
   "modules/bypass_2fa/index.js",
   "modules/custom_name/index.js",
+  "modules/anti_suti/index.js",
 ];
 
 async function getModules() {
