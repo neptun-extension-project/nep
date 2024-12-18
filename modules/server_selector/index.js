@@ -55,7 +55,7 @@ function loadContentScript(browser, document) {
 
         const serverSelect = document.getElementById('server');
         serverSelect.addEventListener('change', (event) => {
-          window.open(event.target.value);
+          window.location.href = event.target.value;
         });
         serverSelect.disabled = true;
         getCurrentServer().then(async data => {
@@ -65,6 +65,8 @@ function loadContentScript(browser, document) {
             const remainingSession = await getServerRemainingSession(server.url);
             option.textContent = server.server_name + ' (' + remainingSession + ')';
             serverSelect.appendChild(option);
+            if (server.url.includes(window.location.host))
+              serverSelect.value = server.url;
           }
           serverSelect.disabled = false;
         });
