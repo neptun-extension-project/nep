@@ -54,18 +54,18 @@ function loadContentScript(browser, document) {
 
   async function tryAddServerSelector() {
     if (!document.querySelector(".server-selector")) {
-      const loginForm = document.querySelector('neptun-login-form');
+      const loginForm = document.querySelector('.login-right');
       if (loginForm) {
         const serverSelector = document.createElement('div');
         serverSelector.classList.add('server-selector');
         serverSelector.innerHTML = `
-          <label for="server">Szerver:</label>
-          <select id="server" name="server">
+          <select id="server-dropdown" name="server">
           </select>
         `;
-        loginForm.appendChild(serverSelector);
+        loginForm.insertBefore(serverSelector, loginForm.firstChild.nextSibling);
 
-        const serverSelect = document.getElementById('server');
+        const serverSelect = document.getElementById('server-dropdown');
+        serverSelect.style = "background-color: #f2f3fb;border: 10px solid #f2f3fb;padding: 5px;border-radius: 10px;font-family: LatoWeb,sans-serif;font-weight: 900;color: #213055;margin: 20px 0 0 0;font-size: 16px;";
         serverSelect.addEventListener('change', (event) => {
           window.location.href = event.target.value;
         });
