@@ -2,6 +2,7 @@ const modulePaths = [
   "modules/custom_name/index.js",
   "modules/cookie_accepter/index.js",
   "modules/server_selector/index.js",
+  "modules/anti_logout/index.js",
 ];
 
 async function getModules() {

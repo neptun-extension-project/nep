@@ -34,6 +34,10 @@ A név mellett a neptun kód átírható egyedi értékre.
 
 Néhány egyetem esetében úgy oldották meg a terhelés elosztását, hogy több, külön címen elérhető neptun szervert futtatnak. Az ezek közti váltást egyszerűsíti ez a modul és azt is tudja jelezni, hogy melyik szerveren hány szabad hely van még.
 
+### Kidobás elleni védelem
+
+Kezdetleges védelem a kijelentkeztetés ellen. Az aktivitás hatására látszólag a vanilla neptun sem tart bejelentkeztetve, így a modul hiába szimulál aktivitást, a neptun továbbra is kidob 10 perc után.
+
 ### Sötét téma
 
 *fejlesztés alatt*
