@@ -24,10 +24,6 @@ A bővítmény kompatibilis Firefox, Chrome és ezeken alapuló böngészőkkel.
 
 Minden funkció külön-külön kapcsolgatható a bővítmény beállításaiban.
 
-### 2FA átugrása
-
-Néhány egyetem esetében kötelező a két faktoros azonosítás használata. Viszont az új Neptun esetében ez egy kis trükközéssel kikerülhető.
-
 ### Megjelenített név/neptunkód személyreszabása
 
 A jobb felső nevet és neptun kódot tartalmazó címke személyre szabására van.
