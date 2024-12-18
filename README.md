@@ -38,6 +38,10 @@ Néhány egyetem esetében úgy oldották meg a terhelés elosztását, hogy tö
 
 Kezdetleges védelem a kijelentkeztetés ellen. Az aktivitás hatására látszólag a vanilla neptun sem tart bejelentkeztetve, így a modul hiába szimulál aktivitást, a neptun továbbra is kidob 10 perc után.
 
+### Süti elfogadása
+
+Egyszerű modul, ami automatikusan elfogadja a neptun által használt sütiket.
+
 ### Sötét téma
 
 *fejlesztés alatt*
