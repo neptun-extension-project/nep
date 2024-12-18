@@ -30,6 +30,10 @@ A jobb felső nevet és neptun kódot tartalmazó címke személyre szabására 
 
 A név mellett a neptun kód átírható egyedi értékre.
 
+### Szerver választó
+
+Néhány egyetem esetében úgy oldották meg a terhelés elosztását, hogy több, külön címen elérhető neptun szervert futtatnak. Az ezek közti váltást egyszerűsíti ez a modul és azt is tudja jelezni, hogy melyik szerveren hány szabad hely van még.
+
 ### Sötét téma
 
 *fejlesztés alatt*
