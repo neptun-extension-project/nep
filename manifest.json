@@ -6,10 +6,15 @@
   "manifest_version": 3,
   "permissions": [
     "declarativeNetRequest",
+    "webRequest",
     "storage",
     "scripting",
     "activeTab"
   ],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
   "action": {
     "default_title": "NEP",
     "default_popup": "options.html",
@@ -71,7 +76,7 @@
     ]
   }],
   "web_accessible_resources": [{
-    "resources": ["modules.js", "modules/*"],
+    "resources": ["modules.js", "modules/*", "server_data.json"],
     "matches": [
       "https://neptun.bme.hu/*",
       "https://neptun.ejf.hu/*",
