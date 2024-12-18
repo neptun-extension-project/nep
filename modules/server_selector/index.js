@@ -1,7 +1,19 @@
 const name = "szerver kiválasztó";
 const id = "server_selector";
-const description = "TODO";
-const options = [];
+const description = "Lehetővé teszi szerver váltását a login felületen.";
+const options = [
+  {
+    name: "szabad helyek mutatása",
+    description: "Kiírja, hogy melyik szerveren hány szabad hely van még.",
+    id: "show_remaining_session",
+    type: "checkbox",
+    value: false,
+  },
+];
+
+function getOption(option) {
+  return options.find((item) => item.id == option).value;
+}
 
 // Parts of this function were written by Cluade 3.5 Sonnet
 function loadContentScript(browser, document) {
@@ -62,8 +74,12 @@ function loadContentScript(browser, document) {
           for (const server of data) {
             const option = document.createElement('option');
             option.value = server.url;
-            const remainingSession = await getServerRemainingSession(server.url);
-            option.textContent = server.server_name + ' (' + remainingSession + ')';
+            if (getOption('show_remaining_session')) {
+              const remainingSession = await getServerRemainingSession(server.url);
+              option.textContent = server.server_name + ' (' + remainingSession + ')';
+            } else {
+              option.textContent = server.server_name;
+            }
             serverSelect.appendChild(option);
             if (server.url.includes(window.location.host))
               serverSelect.value = server.url;
