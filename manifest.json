@@ -76,7 +76,7 @@
     ]
   }],
   "web_accessible_resources": [{
-    "resources": ["modules.js", "modules/*", "server_data.json"],
+    "resources": ["modules.js", "modules/*", "server_data.json", "utils.js"],
     "matches": [
       "https://neptun.bme.hu/*",
       "https://neptun.ejf.hu/*",

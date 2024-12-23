@@ -36,8 +36,9 @@ function getOption(option) {
   return options.find((item) => item.id == option).value;
 }
 
-// Parts of this function were written by Cluade 3.5 Sonnet
-function loadContentScript(browser, document) {
+async function loadContentScript(browser, document) {
+  const utils = await import(browser.runtime.getURL('../utils.js'));
+
   function setCustomTextAll() {
     // TODO: support other languages
     const hello = getOption("custom_hello") ? getOption("custom_hello") : 'Tisztelt';
@@ -68,30 +69,7 @@ function loadContentScript(browser, document) {
     }
   }
 
-  // Initial set
-  setCustomTextAll();
-
-  // Set up MutationObserver to watch for changes
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'childList' || mutation.type === 'characterData') {
-        setCustomTextAll();
-      }
-    });
-  });
-
-  // Start observing the document with the configured parameters
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-    characterData: true
-  });
-
-  // Periodically check and set the text
-  setInterval(setCustomTextAll, 1000); // Check every 1000ms (1 second)
-
-  // Also set the text when the page gains focus
-  window.addEventListener('focus', setCustomTextAll);
+  utils.tryToRun(setCustomTextAll);
 }
 
 export {

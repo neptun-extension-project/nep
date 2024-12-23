@@ -15,8 +15,9 @@ function getOption(option) {
   return options.find((item) => item.id == option).value;
 }
 
-// Parts of this function were written by Cluade 3.5 Sonnet
-function loadContentScript(browser, document) {
+async function loadContentScript(browser, document) {
+  const utils = await import(browser.runtime.getURL('../utils.js'));
+
   async function getCurrentServer() {
     const serverDataUrl = browser.runtime.getURL("server_data.json");
     const currentHost = window.location.host;
@@ -90,30 +91,7 @@ function loadContentScript(browser, document) {
     }
   }
 
-  // Initial set
-  tryAddServerSelector();
-
-  // Set up MutationObserver to watch for changes
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'childList' || mutation.type === 'characterData') {
-        tryAddServerSelector();
-      }
-    });
-  });
-
-  // Start observing the document with the configured parameters
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-    characterData: true
-  });
-
-  // Periodically check and set the text
-  setInterval(tryAddServerSelector, 1000); // Check every 1000ms (1 second)
-
-  // Also set the text when the page gains focus
-  window.addEventListener('focus', tryAddServerSelector);
+  utils.tryToRun(tryAddServerSelector);  
 }
 
 export {
