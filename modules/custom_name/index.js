@@ -1,4 +1,4 @@
-const name = "név személyreszabása";
+const name = "Név személyreszabása";
 const id = "custom_name";
 const description = "Személyre szabhatod a felső név megjelenését.";
 const options = [

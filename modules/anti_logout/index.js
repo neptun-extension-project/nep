@@ -1,4 +1,4 @@
-const name = "kidobás elleni védelem";
+const name = "Kidobás elleni védelem";
 const id = "anti_logout";
 const description = "Inaktivitás ellenére is bejelentkezve tart.";
 const options = [];

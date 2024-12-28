@@ -1,4 +1,4 @@
-const name = "szerver kiválasztó";
+const name = "Szerver kiválasztó";
 const id = "server_selector";
 const description = "Lehetővé teszi szerver váltását a login felületen.";
 const options = [

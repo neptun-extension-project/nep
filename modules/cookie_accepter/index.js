@@ -1,4 +1,4 @@
-const name = "süti elfogadása";
+const name = "Süti elfogadása";
 const id = "cookie_accepter";
 const description = "Automatikusan elfogadja a sütiket. Mert ki ne fogadna el egy kis sütit?";
 const options = [];

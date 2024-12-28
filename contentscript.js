@@ -13,6 +13,6 @@ globalThis.browser ??= chrome;
       }
     });
   } catch (error) {
-    console.error("error loading content scripts:", error);
+    console.error("Error loading content scripts:", error);
   }
 })();

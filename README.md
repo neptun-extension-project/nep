@@ -20,7 +20,7 @@ Ez a webextension eredetileg a régi neptun webes felületéhez készült. Viszo
 
 A bővítmény kompatibilis Firefox, Chrome és ezeken alapuló böngészőkkel.
 
-## Funkciók
+## Működő funkciók
 
 Minden funkció külön-külön kapcsolgatható a bővítmény beállításaiban.
 
@@ -42,11 +42,19 @@ Kezdetleges védelem a kijelentkeztetés ellen. Az aktivitás hatására látsz�
 
 Egyszerű modul, ami automatikusan elfogadja a neptun által használt sütiket.
 
+### Leckekönyv menüpont
+
+Hozzáad egy menüpontot a tanulmányok alá, ami a törzslapra visz (ez volt korábban a leckekönyv).
+
+Jó lenne majd megoldani, hogy az aktuális félév törzslapját ki is válassza.
+
 ### Captcha megoldó
 
 Ha feljön a captchás ablak, automatikusan kitölti és folytatja a bejelentkezési folyamatot.
 
 A hang captchát használja, nagyon minimális az erőforrásigénye. Az eredeti kódot [RED](https://github.com/LetsUpdate) írta a [CSN](https://github.com/LetsUpdate/CSN)-hez, ez lett most adaptálva az új neptunhoz, pici módosításokkal.
+
+## Tervezett funkciók
 
 ### Sötét téma
 
