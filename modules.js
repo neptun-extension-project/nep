@@ -4,6 +4,7 @@ const modulePaths = [
   "modules/server_selector/index.js",
   "modules/anti_logout/index.js",
   "modules/add_leckekonyv/index.js",
+  "modules/captcha_solver/index.js",
 ];
 
 async function getModules() {

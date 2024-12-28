@@ -42,6 +42,12 @@ Kezdetleges védelem a kijelentkeztetés ellen. Az aktivitás hatására látsz�
 
 Egyszerű modul, ami automatikusan elfogadja a neptun által használt sütiket.
 
+### Captcha megoldó
+
+Ha feljön a captchás ablak, automatikusan kitölti és folytatja a bejelentkezési folyamatot.
+
+A hang captchát használja, nagyon minimális az erőforrásigénye. Az eredeti kódot [RED](https://github.com/LetsUpdate) írta a [CSN](https://github.com/LetsUpdate/CSN)-hez, ez lett most adaptálva az új neptunhoz, pici módosításokkal.
+
 ### Sötét téma
 
 *fejlesztés alatt*
@@ -80,10 +86,6 @@ Cicák mászkálnak a fejlécen (Google Colab-ből lopva).
 
 *TODO*
 
-### Captcha megoldó
-
-*TODO*
-
 ### NPU portok
 
 Törekszem az NPU-s funkciók átportolására, de van pár ami szerintem az idő során értelmét vesztette.
@@ -102,6 +104,7 @@ Törekszem az NPU-s funkciók átportolására, de van pár ami szerintem az id�
 | Bezárható “új hivatalos üzenet” értesítés          | todo    |            |
 | Fejléc eltüntetése                                 | ????    |            |
 | Automatikus oldalméret-beállítás                   | ????    |            |
+
 ## Fejlesztés
 
 A projekt egy manifest v3-as web-extension.
@@ -123,6 +126,8 @@ Kérlek mielőtt egy új funkciót implementálsz nyiss rá issue-t, hogy mások
 ## Köszönet
 
 [NPU](https://github.com/solymosi/npu) by [Solymosi Máté](https://github.com/solymosi)
+
+[CSN](https://github.com/LetsUpdate/CSN) by [RED](https://github.com/LetsUpdate)
 
 [selfcare.tech](https://github.com/jenniferlynparsons/selfcaretech)
 
