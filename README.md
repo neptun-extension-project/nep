@@ -141,4 +141,9 @@ Kérlek mielőtt egy új funkciót implementálsz nyiss rá issue-t, hogy mások
 
 ## Licence
 
-Ez a projekt [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.html)-t követ.
+Ez a projekt a [GNU General Public License Version 3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.html) alatt kerül terjesztésre.
+
+Ez a projekt tartalmaz kódot, amely az alábbi forrásból származik:
+
+- RED által készített userscript, amely MIT licenc alatt érhető el.
+  A kapcsolódó szerzői jogi értesítés és a licencfeltételek megtalálhatók a forráskódban.
