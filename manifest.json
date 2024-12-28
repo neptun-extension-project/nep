@@ -7,7 +7,6 @@
   "permissions": [
     "declarativeNetRequest",
     "webRequest",
-    "webRequestBlocking",
     "storage",
     "scripting",
     "activeTab"
