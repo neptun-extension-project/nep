@@ -91,7 +91,10 @@
         "modules.js",
         "modules/*",
         "server_data.json",
-        "utils.js"
+        "utils.js",
+        "modules/swagger_ui/lib/swagger-ui-bundle.js",
+        "modules/swagger_ui/lib/swagger-ui.css",
+        "modules/swagger_ui/lib/js-yaml.js"
       ],
       "matches": [
         "https://hallgato1.neptun.elte.hu/*",
