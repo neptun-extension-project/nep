@@ -39,7 +39,7 @@ async function loadContentScript(browser, document) {
   async function getServerRemainingSession(url) {
     return new Promise((resolve, reject) => {
       browser.runtime.sendMessage(
-        { action: "fetch", url: url + '/api/General/GetEnvironmentData' },
+        { action: "fetch", url: url + '/api/General/EnvironmentData' },
         (response) => {
           if (response.success) {
             const responseObject = JSON.parse(response.data);
