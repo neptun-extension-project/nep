@@ -19,6 +19,9 @@ jobs:
       - name: Install web-ext
         run: npm install -g web-ext
 
+      - name: Validate extension with web-ext
+        run: web-ext lint
+
       - name: Build extension (unsigned)
         run: |
           web-ext build --artifacts-dir web-ext-artifacts --ignore-files "web-ext-artifacts/**"
