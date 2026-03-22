@@ -4,12 +4,25 @@ Ez egy alakuló félben lévő böngésző bővítmény, ami az új (Angular-os)
 
 **Figyelmeztetés: aktív fejlesztés alatt, éles használatra nem ajánlott.**
 
-## Használat
+## Telepítés
 
-Futtatáshoz egyelőre használd a `web-ext` programot.
+### Hivatalos addon oldalakról
+
+*hamarosan*
+
+### Időlegesen (kipróbálásra)
+
+1. Töltsd le a legfrissebb aláiratlan bővítmény fájlt a [release](https://github.com/neptun-extension-project/nep/releases)-ek közül vagy [artifact](https://github.com/neptun-extension-project/nep/actions)-ekből. Utóbbi esetében csomagold ki a külső zip-et.
+2. Telepítsd a kedvenc bóngésződben:
+   Firefox: `about:addons` oldalon: fogaskerék > Debug Add-ons > Load Temporary Add-on…
+   Chrome: `chrome://extensions` oldalon: Load unpacked
+
+### Fejlesztéshez
+
+Futtatáshoz használd a `web-ext` programot.
 
 ```bash
-web-ext run -v -u https://neptun-web3.tr.pte.hu/hallgatoing/login
+web-ext run -v -u https://neptun.bme.hu/hallgatoi/login
 ```
 
 ## Megjegyzés régi Neptunnal kapcsolatban
