@@ -2,8 +2,6 @@
 
 Ez egy alakuló félben lévő böngésző bővítmény, ami az új (Angular-os) Neptun használatát hivatott kellemesebbé tenni.
 
-**Figyelmeztetés: aktív fejlesztés alatt, éles használatra nem ajánlott.**
-
 ## Telepítés
 
 ### Hivatalos addon oldalakról
@@ -51,7 +49,7 @@ Néhány egyetem esetében úgy oldották meg a terhelés elosztását, hogy tö
 
 ### Kidobás elleni védelem
 
-Kezdetleges védelem a kijelentkeztetés ellen. Az aktivitás hatására látszólag a vanilla neptun sem tart bejelentkeztetve, így a modul hiába szimulál aktivitást, a neptun továbbra is kidob 10 perc után.
+Aktivitást szimulál, így nem dob ki a neptun 10 perc után.
 
 ### Süti elfogadása
 
