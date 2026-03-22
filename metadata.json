@@ -1,0 +1,12 @@
+{
+  "version": { "license": "GPL-3.0" },
+  "categories": { "firefox": ["other"] },
+  "requires_payment": false,
+  "homepage": {
+    "hu-HU": "https://github.com/neptun-extension-project/nep"
+  },
+  "support_email": {
+    "hu-HU": "boa@protonmail.com",
+    "en-EN": "boa@protonmail.com"
+  }
+}
