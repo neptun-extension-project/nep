@@ -1,0 +1,30 @@
+name: Build Web Extension (Unsigned)
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install web-ext
+        run: npm install -g web-ext
+
+      - name: Build extension (unsigned)
+        run: |
+          web-ext build --artifacts-dir web-ext-artifacts --ignore-files "web-ext-artifacts/**"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-extension-unsigned
+          path: web-ext-artifacts/*.zip
