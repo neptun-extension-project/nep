@@ -69,6 +69,12 @@ Ha feljön a captchás ablak, automatikusan kitölti és folytatja a bejelentkez
 
 A hang captchát használja, nagyon minimális az erőforrásigénye. Az eredeti kódot [RED](https://github.com/LetsUpdate) írta a [CSN](https://github.com/LetsUpdate/CSN)-hez, ez lett most adaptálva az új neptunhoz, pici módosításokkal.
 
+### Swagger UI
+
+Fejlesztőknek segít a neptun API próbálgatásában.
+
+Hozzáad egy gombot a footer-hez, ami injektálja a swagger-ui-t az oldalba. Ezen a UI-on automatikusan kiválasztja az aktuális neptun szervert és kitölti a session storage alapján az access token-t.
+
 ## Tervezett funkciók
 
 ### Sötét téma
@@ -162,3 +168,7 @@ Ez a projekt tartalmaz kódot, amely az alábbi forrásból származik:
 
 - RED által készített userscript, amely MIT licenc alatt érhető el.
   A kapcsolódó szerzői jogi értesítés és a licencfeltételek megtalálhatók a forráskódban.
+
+- [js-yaml](https://github.com/nodeca/js-yaml), Vitaly Puzrin fejlesztése: MIT licensz alatt
+
+- [swagger-ui](https://github.com/swagger-api/swagger-ui), a SmartBear Software-től: Apache License 2.0 licensz alatt
