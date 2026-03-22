@@ -14,7 +14,9 @@ Ez egy alakuló félben lévő böngésző bővítmény, ami az új (Angular-os)
 
 1. Töltsd le a legfrissebb aláiratlan bővítmény fájlt a [release](https://github.com/neptun-extension-project/nep/releases)-ek közül vagy [artifact](https://github.com/neptun-extension-project/nep/actions)-ekből. Utóbbi esetében csomagold ki a külső zip-et.
 2. Telepítsd a kedvenc bóngésződben:
+
    Firefox: `about:addons` oldalon: fogaskerék > Debug Add-ons > Load Temporary Add-on…
+
    Chrome: `chrome://extensions` oldalon: Load unpacked
 
 ### Fejlesztéshez
