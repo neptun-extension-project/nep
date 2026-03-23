@@ -37,7 +37,7 @@ servers:
   - url: https://hallgato3.neptun.elte.hu/api
   - url: https://hallgato4.neptun.elte.hu/api
   - url: https://hallgato5.neptun.elte.hu/api
-  - url: https://neptun.bme.hu/hallgato/api
+  - url: https://neptun.bme.hu/hallgatoi/api
 paths:
   /Account/Authenticate:
     post:
