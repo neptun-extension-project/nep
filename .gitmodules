@@ -1,0 +1,3 @@
+[submodule "modules/swagger_ui/api"]
+	path = modules/swagger_ui/api
+	url = https://github.com/neptun-extension-project/neptun_api

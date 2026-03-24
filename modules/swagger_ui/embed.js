@@ -47,7 +47,7 @@ export async function embedSwaggerUI() {
     // Post a message to the page context to show Swagger UI
     window.postMessage({
         type: 'SHOW_SWAGGER_UI',
-        openapiUrl: chrome.runtime.getURL('modules/swagger_ui/openapi.yaml'),
+        openapiUrl: chrome.runtime.getURL('modules/swagger_ui/api/openapi.yaml'),
         cssUrl: chrome.runtime.getURL('modules/swagger_ui/lib/swagger-ui.css'),
         swaggerUiUrl: chrome.runtime.getURL('modules/swagger_ui/lib/swagger-ui-bundle.js'),
         jsYamlUrl: chrome.runtime.getURL('modules/swagger_ui/lib/js-yaml.js'),
