@@ -6,6 +6,7 @@ const modulePaths = [
   "modules/add_leckekonyv/index.js",
   "modules/captcha_solver/index.js",
   "modules/swagger_ui/index.js",
+  "modules/menu/index.js",
 ];
 
 async function getModules() {

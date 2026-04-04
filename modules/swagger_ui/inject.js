@@ -75,13 +75,9 @@
       console.log('Got access token from sessionStorage:', accessToken);
     } catch (e) {}
 
-    // Request interceptor to add Authorization header for /UserInfo
+    // Request interceptor to add Authorization header for all requests when a bearer token is available
     function requestInterceptor(req) {
-      if (
-        accessToken &&
-        req.url &&
-        /\/UserInfo(\?|$)/.test(req.url)
-      ) {
+      if (accessToken) {
         req.headers = req.headers || {};
         req.headers['Authorization'] = 'Bearer ' + accessToken;
       }
@@ -99,6 +95,7 @@
     });
     // Pre-fill the Authorization field in the UI
     if (accessToken) {
+      console.log('Preauthorizing Swagger UI with access token:', accessToken);
       // Wait a tick to ensure UI is ready
       setTimeout(() => {
         try {

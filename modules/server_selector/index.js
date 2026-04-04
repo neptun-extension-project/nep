@@ -15,7 +15,7 @@ function getOption(option) {
   return options.find((item) => item.id == option).value;
 }
 
-async function loadContentScript(browser, document) {
+async function loadContentScript(browser, document, window) {
   const utils = await import(browser.runtime.getURL('../utils.js'));
 
   async function getCurrentServer() {

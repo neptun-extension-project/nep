@@ -3,7 +3,7 @@ const id = "cookie_accepter";
 const description = "Automatikusan elfogadja a sütiket. Mert ki ne fogadna el egy kis sütit?";
 const options = [];
 
-async function loadContentScript(browser, document) {
+async function loadContentScript(browser, document, window) {
   localStorage.setItem('cookieAccepted', 'true');
   const utils = await import(browser.runtime.getURL('../utils.js'));
 

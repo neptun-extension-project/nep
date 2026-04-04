@@ -3,7 +3,7 @@ const id = "add_leckekonyv";
 const description = "Visszahozza a Leckekönyv menüpontot.";
 const options = [];
 
-async function loadContentScript(browser, document) {
+async function loadContentScript(browser, document, window) {
     const utils = await import(browser.runtime.getURL('../utils.js'));
 
     const neptunUrl = await utils.getCurrentNeptunUrl(browser);

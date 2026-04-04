@@ -140,7 +140,7 @@ async function audioToNumbers(audioLink) {
         });
 }
 
-function loadContentScript(browser, document) {
+function loadContentScript(browser, document, window) {
     browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.audioUrl) {
             console.log("Audio URL:", message.audioUrl);

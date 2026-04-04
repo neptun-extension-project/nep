@@ -8,7 +8,7 @@ globalThis.browser ??= chrome;
 
     moduleList.forEach((module) => {
       if (module && typeof module.loadContentScript === "function") {
-        module.loadContentScript(browser, document);
+        module.loadContentScript(browser, document, window);
         console.log("Loaded content script:", module.name);
       }
     });
