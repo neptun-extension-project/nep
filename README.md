@@ -6,7 +6,7 @@ Ez egy alakuló félben lévő böngésző bővítmény, ami az új (Angular-os)
 
 ### Hivatalos addon oldalakról
 
-*hamarosan*
+[Firefox Addons](https://addons.mozilla.org/en-US/firefox/addon/neptun-extension-project/)
 
 ### Időlegesen (kipróbálásra)
 
