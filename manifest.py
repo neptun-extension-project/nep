@@ -11,8 +11,12 @@ for servers in server_data:
     urls = [server["url"] for server in server_data[servers]]
     server_urls.extend(urls)
 
-server_wildcards = [url + "*" for url in server_urls]
-domain_wildcards = ['/'.join(url.split("/")[:3]) + '*' for url in server_urls]
+server_wildcards = []
+for url in server_urls:
+    server_wildcards.append(url+"*")
+    server_wildcards.append(url.strip("/"))
+
+domain_wildcards = ['/'.join(url.split("/")[:3]) + '/*' for url in server_urls]
 manifest["content_scripts"][0]["matches"] = server_wildcards
 manifest["web_accessible_resources"][0]["matches"] = domain_wildcards
 manifest["host_permissions"] = server_wildcards
