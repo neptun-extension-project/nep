@@ -14,7 +14,7 @@ for servers in server_data:
 server_wildcards = []
 for url in server_urls:
     server_wildcards.append(url+"*")
-    server_wildcards.append(url.strip("/"))
+    server_wildcards.append(url)
 
 domain_wildcards = ['/'.join(url.split("/")[:3]) + '/*' for url in server_urls]
 manifest["content_scripts"][0]["matches"] = server_wildcards
