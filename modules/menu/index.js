@@ -1062,31 +1062,55 @@ async function renderMenu(document, win, menuData) {
 
 function renderMenuWhenReady(document, win, menuData) {
   return new Promise((resolve) => {
-    renderMenu(document, win, menuData).then((rendered) => {
-      if (rendered) {
-        resolve(true);
+    let settled = false;
+    let renderAttemptInProgress = false;
+    let observer = null;
+
+    const timeoutId = win.setTimeout(() => {
+      finish(false);
+    }, 10000);
+
+    function finish(result) {
+      if (settled) {
         return;
       }
 
-      const observer = new MutationObserver(async () => {
-        if (await renderMenu(document, win, menuData)) {
-          observer.disconnect();
-          resolve(true);
-        }
-      });
+      settled = true;
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
+      win.clearTimeout(timeoutId);
+      resolve(result);
+    }
 
-      if (document.body) {
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
+    async function attemptRender() {
+      if (settled || renderAttemptInProgress) {
+        return;
       }
 
-      win.setTimeout(() => {
-        observer.disconnect();
-        resolve(false);
-      }, 10000);
+      renderAttemptInProgress = true;
+      try {
+        if (await renderMenu(document, win, menuData)) {
+          finish(true);
+        }
+      } finally {
+        renderAttemptInProgress = false;
+      }
+    }
+
+    observer = new MutationObserver(() => {
+      attemptRender();
     });
+
+    if (document.body) {
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    attemptRender();
   });
 }
 
