@@ -55,12 +55,6 @@ Simulates activty to keep you from being logged out after 10 minutes.
 
 A simple module that automatically accepts the cookies used by Neptun.
 
-### Gradebook menu item
-
-Adds a menu item under "Studies" that leads to the transcript (previously called gradebook).
-
-It would be nice to automatically select the transcript for the current semester in the future.
-
 ### Captcha solver
 
 If the captcha window appears, it automatically fills it in and continues the login process.
@@ -72,6 +66,12 @@ It uses the audio captcha, requiring minimal resources. The original code was wr
 Helps developers test the Neptun API.
 
 Adds a button to the footer that injects Swagger UI into the page. On this UI, it automatically selects the current Neptun server and fills in the access token from session storage.
+
+### Menu rewrite
+
+Replaces the dropdown menu (from the previous Neptun interface) with a horizontally laid-out menu bar and removes the search textbox.
+
+It also revamps the favorites management, removing the completely unnecessary 8-item limit. Favorites are still stored in Neptun, but in an incompatible format, which will overwrite previous favorites. Any URL can be added as a favorite.
 
 ## Planned features
 

@@ -55,12 +55,6 @@ Aktivitást szimulál, így nem dob ki a neptun 10 perc után.
 
 Egyszerű modul, ami automatikusan elfogadja a neptun által használt sütiket.
 
-### Leckekönyv menüpont
-
-Hozzáad egy menüpontot a tanulmányok alá, ami a törzslapra visz (ez volt korábban a leckekönyv).
-
-Jó lenne majd megoldani, hogy az aktuális félév törzslapját ki is válassza.
-
 ### Captcha megoldó
 
 Ha feljön a captchás ablak, automatikusan kitölti és folytatja a bejelentkezési folyamatot.
@@ -72,6 +66,12 @@ A hang captchát használja, nagyon minimális az erőforrásigénye. Az eredeti
 Fejlesztőknek segít a neptun API próbálgatásában.
 
 Hozzáad egy gombot a footer-hez, ami injektálja a swagger-ui-t az oldalba. Ezen a UI-on automatikusan kiválasztja az aktuális neptun szervert és kitölti a session storage alapján az access token-t.
+
+### Menü újragondolás
+
+A korábbi Neptun felületre építve vízszintesen kiterített menüsávra cseréli a lenyíló menüt és kiszedi a keresés szövegdobozt.
+
+A kedvenceket kezelését is átalakítja kiszedve a teljesen értelmetlen 8 db-os limitet. A kedvenceket továbbra is a neptunban tárolja, de nem kompatibilis formátumban, ami a korábbi kedvenceket felülírja. Tetszőleges URL is megadható kedvencnek.
 
 ## Tervezett funkciók
 
