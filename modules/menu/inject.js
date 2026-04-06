@@ -990,6 +990,10 @@ async function buildHorizontalMenu(document, win, menuItems, rerenderMenu, label
         menu.appendChild(itemWrapper);
     });
 
+    if (document.querySelector('meta[name="hide_favorites"]')?.content === "true") {
+        return menu;
+    }
+
     menu.appendChild(
         await buildFavoritesMenuItem(document, win, routeBasePath, currentPath, menuItems, rerenderMenu, labels)
     );
