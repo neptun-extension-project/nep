@@ -33,10 +33,28 @@
             "server_name": "DRHE_NGHW"
         }
     ],
+    "G\u00e1l Ferenc Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/gfehw/",
+            "server_name": "GFE_NGHW"
+        }
+    ],
+    "Moholy-Nagy M\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/momehw/",
+            "server_name": "MOME_NGHW"
+        }
+    ],
     "Magyar T\u00e1ncm\u0171v\u00e9szeti Egyetem": [
         {
             "url": "https://host.sdakft.hu/mtfhw/",
             "server_name": "MTF_NGHW"
+        }
+    ],
+    "Sz\u00ednh\u00e1z- \u00e9s Filmm\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://host.sdakft.hu/szfehw/",
+            "server_name": "SZFE_NGHW"
         }
     ],
     "A Tan Kapuja Buddhista F\u0151iskola": [
@@ -54,7 +72,7 @@
     "Sz\u00e9chenyi Istv\u00e1n Egyetem": [
         {
             "url": "https://neptun-hweb.sze.hu/hallgato_ng/",
-            "server_name": "SZE_W2_HW_NG"
+            "server_name": "SZE_W5_HW_NG"
         }
     ],
     "P\u00e9csi Tudom\u00e1nyegyetem": [
@@ -88,7 +106,7 @@
     "Budapesti M\u0171szaki \u00e9s Gazdas\u00e1gtudom\u00e1nyi Egyetem": [
         {
             "url": "https://neptun.bme.hu/hallgatoi/",
-            "server_name": "BME_HPA_15"
+            "server_name": "BME_HPA_16"
         }
     ],
     "E\u00f6tv\u00f6s J\u00f3zsef F\u0151iskola": [
@@ -109,6 +127,12 @@
             "server_name": "KJF_NG"
         }
     ],
+    "Liszt Ferenc Zenem\u0171v\u00e9szeti Egyetem": [
+        {
+            "url": "https://neptun.lfze.hu/hallgato/",
+            "server_name": "LFZE_HW2"
+        }
+    ],
     "Orsz\u00e1gos Rabbik\u00e9pz\u0151 - Zsid\u00f3 Egyetem": [
         {
             "url": "https://neptun.or-zse.hu/hallgato/",
@@ -118,7 +142,7 @@
     "Szegedi Tudom\u00e1nyegyetem": [
         {
             "url": "https://neptun.szte.hu/hallgato/",
-            "server_name": "NTWEB02_HW"
+            "server_name": "NTWEB01_HW"
         }
     ],
     "Magyar Testnevel\u00e9si \u00e9s Sporttudom\u00e1nyi Egyetem": [
@@ -131,6 +155,18 @@
         {
             "url": "https://neptun.uni-milton.hu/hallgato/",
             "server_name": "MILTON_HW"
+        }
+    ],
+    "\u00d3budai Egyetem": [
+        {
+            "url": "https://neptun.uni-obuda.hu/ujhallgato/",
+            "server_name": "Hallgato_WEB_116"
+        }
+    ],
+    "Tokaj-Hegyalja Egyetem": [
+        {
+            "url": "https://neptun.unithe.hu/hallgato/",
+            "server_name": "THE_NGHW"
         }
     ],
     "\u00c1llatorvostudom\u00e1nyi Egyetem": [
@@ -158,7 +194,13 @@
     "Budapesti Corvinus Egyetem": [
         {
             "url": "https://neptun3r.web.uni-corvinus.hu/Hallgatoi/",
-            "server_name": "BCE_HA5"
+            "server_name": "BCE_HA3"
+        }
+    ],
+    "Eszterh\u00e1zy K\u00e1roly Katolikus Egyetem": [
+        {
+            "url": "https://neptunh.uni-eszterhazy.hu/Hallgato/",
+            "server_name": "EKKE_HALLGATO_19"
         }
     ],
     "Ny\u00edregyh\u00e1zi Egyetem": [
@@ -170,7 +212,7 @@
     "Nemzeti K\u00f6zszolg\u00e1lati Egyetem": [
         {
             "url": "https://neptunweb.uni-nke.hu/hallgato_ng/",
-            "server_name": "NKE_WEB2_HWNG"
+            "server_name": "NKE_WEB1_HWNG"
         }
     ],
     "Budapesti Metropolitan Egyetem": [
@@ -186,7 +228,7 @@
     "Debreceni Egyetem": [
         {
             "url": "https://www-h-ng.neptun.unideb.hu/hallgato_ng/",
-            "server_name": "DE_HWEB_25"
+            "server_name": "DE_HWEB_23"
         }
     ]
 }
