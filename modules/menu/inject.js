@@ -241,7 +241,28 @@ function detachMenuData(pageWindow, rawMenuData) {
     }
 }
 
+function getAppBasePath(win) {
+    const baseHref = win.document.querySelector("base")?.getAttribute("href");
+
+    if (!baseHref || !(baseHref.startsWith("/") || baseHref.includes("://"))) {
+        return null;
+    }
+
+    try {
+        return new URL(baseHref, win.location.href).pathname.replace(/\/+$/g, "") || "/";
+    } catch (error) {
+        console.warn("[Menu] Failed to parse base href:", error);
+        return null;
+    }
+}
+
 function findRouteBasePath(win, menuItems) {
+    const appBasePath = getAppBasePath(win);
+
+    if (appBasePath) {
+        return appBasePath;
+    }
+
     const pathSegments = win.location.pathname
         .split("/")
         .map(normalizeSegment)
